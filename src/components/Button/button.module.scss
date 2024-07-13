@@ -1,0 +1,7 @@
+.primary{
+    @apply w-auto text-lg py-md px-lg text-white bg-primary rounded-full border border-primary font-medium;
+}
+
+.secondary{
+    @apply w-auto text-lg py-md px-lg text-primary bg-transparent rounded-full border border-primary font-medium;
+}

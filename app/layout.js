@@ -1,5 +1,6 @@
 import { Lato, Roboto } from 'next/font/google'
 import './globals.scss'
+import Header from '@/src/components/Header'
 
 const robotoFont = Roboto({
   weight: ['400', '500', '700'],
@@ -21,7 +22,10 @@ export default function RootLayout({ children }) {
       <body
       className={robotoFont.className}
         style={{'--primary-font': robotoFont.style.fontFamily, '--secondary-font': latoFont.style.fontFamily}}
-        >{children}</body>
+        >
+          <Header/>
+          {children}
+        </body>
     </html>
   )
 }

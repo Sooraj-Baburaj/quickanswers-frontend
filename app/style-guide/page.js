@@ -10,23 +10,23 @@ const StyleGuide = () => {
                     <div className="w-3/12">
                         <ul className='w-full  border-r border-r-secondary-border'>
                             <li className='py-md border-b border-dashed border-b-secondary-border'>
-                                <button className='text-xl py-sm'>Colors</button>
+                                <button className='text-lg py-sm'>Colors</button>
                             </li>
                             <li className='py-md border-b border-dashed border-b-secondary-border'>
-                                <button className='text-xl py-sm'>Button</button>
+                                <button className='text-lg py-sm'>Button</button>
                             </li>
 
                             <li className='py-md border-b border-dashed border-b-secondary-border'>
-                                <button className='text-xl py-sm'>Input</button>
+                                <button className='text-lg py-sm'>Input</button>
                             </li>
                             <li className='py-md border-b border-dashed border-b-secondary-border'>
-                                <button className='text-xl py-sm'>Text size</button>
+                                <button className='text-lg py-sm'>Text size</button>
                             </li>
                             <li className='py-md border-b border-dashed border-b-secondary-border'>
-                                <button className='text-xl py-sm'>Font Family</button>
+                                <button className='text-lg py-sm'>Font Family</button>
                             </li>
                             <li className='py-md border-b border-dashed border-b-secondary-border'>
-                                <button className='text-xl py-sm'>Spacing</button>
+                                <button className='text-lg py-sm'>Spacing</button>
                             </li>
                         </ul>
                     </div>
