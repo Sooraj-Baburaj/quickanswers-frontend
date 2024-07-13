@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+//mixins
+@function size($value) {
+    @return ($value / 16) + rem;
+}
+
+
+:root{
+
+    // colors
+    --primary-color : #451E5D;
+    --secondary-color : #000;
+    --tertiary-color : #000;
+
+
+
+    --primary-grey-color : #FAFAFB;
+    --secondary-grey-color : #000;
+    --tertiary-grey-color : #000;
+
+
+    --primary-light-color : #000;
+    --secondary-light-color : #000;
+    --tertiary-light-color : #000;
+
+
+    --primary-dark-color : #000;
+    --secondary-dark-color : #000;
+    --tertiary-dark-color : #000;
+
+
+    --primary-border-color : #E8E4EB;
+    --secondary-border-color : #E8E4EB;
+    --tertiary-border-color : #000;
+
+
+    --primary-text-color : #000;
+    --secondary-text-color : #000;
+    --tertiary-text-color : #000;
+
+    // spacing
+    --space-xs : #{size(2)};
+    --space-sm : #{size(4)};
+    --space-md : #{size(8)};
+    --space-lg : #{size(16)};
+    --space-xl : #{size(24)};
+    --space-2xl : #{size(32)};
+    --space-3xl : #{size(40)};
+    --space-4xl : #{size(48)};
+
+
+
+    // spacing
+    --text-xs : #{size(10)};
+    --text-sm : #{size(12)};
+    --text-md : #{size(14)};
+    --text-lg : #{size(16)};
+    --text-xl : #{size(18)};
+    --text-2xl : #{size(20)};
+    --text-3xl : #{size(22)};
+    --text-4xl : #{size(24)};
+
+    
+}

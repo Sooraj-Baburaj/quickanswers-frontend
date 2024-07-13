@@ -47,7 +47,7 @@ export default function Home() {
     getBlogData(search);
   };
   return (
-    <main>
+    <main className="">
       <input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
