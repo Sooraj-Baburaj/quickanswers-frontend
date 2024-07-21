@@ -23,7 +23,7 @@ const LoginPage = () => {
           label={"Password"}
           name={"password"}
           type={"password"}
-          placeholder={"Enter email address"}
+          placeholder={"Enter password"}
         />
       </div>
       <div className="w-full relative">

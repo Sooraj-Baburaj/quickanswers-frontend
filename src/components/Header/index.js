@@ -3,6 +3,7 @@ import React from 'react'
 import Logo from '../Logo'
 import Button from '../Button'
 import HeaderMenu from '../HeaderMenu'
+import Links from '../Links'
 
 const Header = () => {
   return (
@@ -24,8 +25,8 @@ const Header = () => {
 
                 {/* action buttons */}
                 <div className="w-auto flex space-x-lg ml-auto">
-                    <Button title={'login'} type='secondary'/>
-                    <Button title={'Sign Up'}/>
+                    <Links href='/login' type='secondary'>login</Links>
+                    <Links href='/signup' type='primary'>Sign Up</Links>
                 </div>
 
                 

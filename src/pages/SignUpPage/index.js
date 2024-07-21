@@ -11,10 +11,16 @@ const SignUpPage = () => {
                 <AuthSwitch activeTab='signup' />
             </div>
             <div className="w-full relative flex flex-col mb-lg">
+                <Input label={'Name'} name={'text'} type={'email'} placeholder={'Enter user name'} />
+            </div>
+            <div className="w-full relative flex flex-col mb-lg">
                 <Input label={'Email'} name={'emil'} type={'email'} placeholder={'Enter email address'} />
             </div>
             <div className="w-full relative flex flex-col mb-lg">
-                <Input label={'Password'} name={'password'} type={'password'} placeholder={'Enter email address'} />
+                <Input label={'Password'} name={'password'} type={'password'} placeholder={'Enter password'} />
+            </div>
+            <div className="w-full relative flex flex-col mb-lg">
+                <Input label={'Password-re'} name={'password'} type={'password'} placeholder={'Reenter password'} />
             </div>
             <div className='w-full relative'>
                 <Button type='primary-box' title={'Login'} />
