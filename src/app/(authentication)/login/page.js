@@ -1,12 +1,12 @@
-import AuthSwitch from "@/src/components/AuthSwitch";
-import Button from "@/src/components/Button";
-import Input from "@/src/components/Input";
-import AuthWidget from "@/src/widget/authWidget";
 import React from "react";
 
-const LoginPage = () => {
+import AuthSwitch from "@/src/components/AuthSwitch";
+import Input from "@/src/components/ui/Input";
+import Button from "@/src/components/ui/Button";
+
+const Login = () => {
   return (
-    <AuthWidget>
+    <>
       <div className="w-full mb-xl flex justify-center items-center">
         <AuthSwitch />
       </div>
@@ -40,8 +40,8 @@ const LoginPage = () => {
           Login Google
         </button>
       </div>
-    </AuthWidget>
+    </>
   );
 };
 
-export default LoginPage;
+export default Login;

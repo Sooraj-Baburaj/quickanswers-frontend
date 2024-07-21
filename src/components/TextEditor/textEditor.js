@@ -2,8 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import Icon from "../Icon";
-import Button from "../Button";
+import Icon from "../ui/Icon";
+import Button from "../ui/Button";
 import { motion } from "framer-motion";
 
 const TextEditor = () => {
@@ -13,7 +13,6 @@ const TextEditor = () => {
   const [pos, setPos] = useState(false);
   const selectTextRef = useRef(null);
   useEffect(() => {
-
     console.log(selectTextRef);
     if (selectTextRef?.current?.editingArea) {
       selectTextRef?.current?.editingArea.addEventListener("mouseup", () => {
@@ -31,14 +30,13 @@ const TextEditor = () => {
           setPos({ x: rect.left, y: rect.top, w: rect.width });
         }
 
-
         if (selection && selection.rangeCount > 0 && !selection.isCollapsed) {
-                // Text is selected, ensure toggleArea is visible
-                console.log('no hide');
-            } else {
-                // No text selected, hide toggleArea
-                console.log('hide');
-            }
+          // Text is selected, ensure toggleArea is visible
+          console.log("no hide");
+        } else {
+          // No text selected, hide toggleArea
+          console.log("hide");
+        }
       });
     }
 
@@ -49,16 +47,15 @@ const TextEditor = () => {
 
   console.log(pos);
 
-
   const clickBold = () => {
     const quill = selectTextRef.current.getEditor();
     const range = quill.getSelection();
 
     if (range) {
       const currentBold = quill.getFormat(range).bold;
-      quill.format('bold', !currentBold);
+      quill.format("bold", !currentBold);
     }
-  }
+  };
 
   return (
     <div className="w-full relative">
@@ -69,7 +66,10 @@ const TextEditor = () => {
         <button className="w-[30px] h-[30px] flex justify-center items-center ml-lg">
           <Icon icon="link" size={20} color="#fff" />
         </button>
-        <button onClick={clickBold} className="w-[30px] h-[30px] flex justify-center items-center">
+        <button
+          onClick={clickBold}
+          className="w-[30px] h-[30px] flex justify-center items-center"
+        >
           <Icon icon="bold" size={20} color="#fff" />
         </button>
         <button className="w-[30px] h-[30px] flex justify-center items-center">

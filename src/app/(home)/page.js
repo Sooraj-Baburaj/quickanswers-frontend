@@ -1,9 +1,9 @@
 "use client";
 import "./page.css";
 import { useState } from "react";
-import parse from "html-react-parser";
 import { getAxiosInstance } from "@/src/api";
-import HomePage from "@/src/pages/HomePage";
+import HomeBanner from "./components/HomeBanner";
+import ItemsContainer from "./components/ItemsContainer";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -55,10 +55,12 @@ export default function Home() {
         placeholder="Ask me anything"
       />
       <button onClick={handleClick}>Find</button> */}
-      {/* <div>{parse(blog, { replace: false })}</div> */}
+      {/* <div>{blog}</div> */}
 
-
-      <HomePage/>
+      <section>
+        <HomeBanner />
+        <ItemsContainer />
+      </section>
     </main>
   );
 }
