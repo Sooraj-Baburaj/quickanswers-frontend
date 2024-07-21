@@ -34,7 +34,7 @@
     --tertiary-dark-color : #000;
 
 
-    --primary-border-color : #E8E4EB;
+    --fp-border-color : #E8E4EB;
     --secondary-border-color : #E8E4EB;
     --tertiary-border-color : #000;
 
@@ -66,4 +66,11 @@
     --text-4xl : #{size(24)};
 
     
+}
+
+.ql-toolbar{
+    display: none;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow{
+    border-top: 1px solid #ccc !important;
 }
