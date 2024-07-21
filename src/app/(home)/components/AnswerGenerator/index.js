@@ -4,10 +4,10 @@ import React from "react";
 
 const AnswerGenerator = () => {
   return (
-    <div className="w-full">
+    <div className="w-full mt-[-24px] relative z-10">
       <div className="container">
         <div className="w-full relative flex">
-          <form className="w-full shadow-md rounded-full flex overflow-hidden p-sm">
+          <form className="w-full shadow-md rounded-full flex overflow-hidden bg-[#fff] p-sm">
             <span className="w-full flex">
               <Input
                 className={"w-full flex-1 px-lg py-md focus-visible:outline-none"}
