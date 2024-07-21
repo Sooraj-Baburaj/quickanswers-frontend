@@ -1,6 +1,7 @@
 import React from "react";
 import Icon from "../Icon";
 import Tag from "../Tag";
+import Links from "../Links";
 
 const QuestionThumbnail = () => {
   return (
@@ -33,7 +34,12 @@ const QuestionThumbnail = () => {
         </div>
         <h4 className="text-lg leading-[1.6] font-medium mb-sm">Inverse formula of exponential moving average (ewm) in pandas <span><Tag/></span></h4>
         <p className="text-md opacity-70">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, facilis dolorum. Qui, molestias. Autem quidem temporibus, perspiciatis rem aspernatur obcaecati ex quod iste itaque explicabo reprehenderit, nulla quis est. Inventore?</p>
+        <Links className="text-md space-x-md mt-md opacity-65 hover:opacity-100 duration-300" href="/">
+            <span>Read Answer</span>
+            <span><Icon icon="arrows" size={10} color="#000" /></span>
+        </Links>
       </div>
+      
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import Pagination from '@/src/components/Pagination'
+import PerPage from '@/src/components/PerPage'
 import QuestionThumbnail from '@/src/components/QuestionThumbnail'
 import React from 'react'
 
@@ -18,6 +20,11 @@ const QuestionsList = () => {
           <QuestionThumbnail/>
         </li>
       </ul>
+      <div className='w-full flex justify-between mt-[8px] sticky bottom-[0px] bg-[#fff] py-lg'>
+
+        <Pagination/>
+        <PerPage/>
+      </div>
     </div>
   )
 }

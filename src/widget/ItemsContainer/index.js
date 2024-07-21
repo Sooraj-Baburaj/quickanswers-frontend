@@ -4,7 +4,7 @@ import QuestionsList from "../QuestionsList";
 
 const ItemsContainer = () => {
   return (
-    <div className="w-full flex flex-wrap relative pt-[52px]">
+    <div className="w-full flex flex-wrap relative py-[52px]">
       <div className="container">
         <div className="w-full flex flex-wrap">
           <diva className="w-full max-w-[314px]">
