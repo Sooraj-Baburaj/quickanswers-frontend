@@ -60,8 +60,9 @@ export default function Home() {
 
       <section>
         <HomeBanner />
-        <AnswerGenerator/>
+        <AnswerGenerator />
         <ItemsContainer />
+
       </section>
     </main>
   );

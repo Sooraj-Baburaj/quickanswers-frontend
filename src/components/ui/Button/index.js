@@ -1,10 +1,10 @@
 import React from 'react'
 import classes from './button.module.scss'
-const Button = ({ title, type = 'primary' }) => {
+const Button = ({ title, type = 'primary', children, ...rest }) => {
   return (
     <>
-      <button className={classes[type]}>
-        <span>{title}</span>
+      <button className={classes[type]} {...rest}>
+        <span>{title || children}</span>
       </button>
     </>
   )

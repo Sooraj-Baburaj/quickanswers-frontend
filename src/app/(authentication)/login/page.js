@@ -1,6 +1,5 @@
 import React from "react";
 
-import AuthSwitch from "@/src/components/AuthSwitch";
 import Input from "@/src/components/ui/Input";
 import Button from "@/src/components/ui/Button";
 
@@ -8,7 +7,6 @@ const Login = () => {
   return (
     <>
       <div className="w-full mb-xl flex justify-center items-center">
-        <AuthSwitch />
       </div>
       <div className="w-full relative flex flex-col mb-lg">
         <Input

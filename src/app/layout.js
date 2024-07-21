@@ -20,12 +20,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-      className={robotoFont.className}
-        style={{'--primary-font': robotoFont.style.fontFamily, '--secondary-font': latoFont.style.fontFamily}}
-        >
-          <Header/>
-          {children}
-        </body>
+        className={robotoFont.className}
+        style={{ '--primary-font': robotoFont.style.fontFamily, '--secondary-font': latoFont.style.fontFamily }}
+      >
+        <Header />
+        {children}
+        <div id='portal'></div>
+      </body>
     </html>
   )
 }
