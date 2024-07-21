@@ -22,16 +22,7 @@ const TopCreator = () => {
                     <Avatar/>
                 </Links>
             </li>
-            <li className='w-full'>
-                <Links href={'/'}>
-                    <Avatar/>
-                </Links>
-            </li>
-            <li className='w-full'>
-                <Links href={'/'}>
-                    <Avatar/>
-                </Links>
-            </li>
+            
         </ul>
     </div>
   )
