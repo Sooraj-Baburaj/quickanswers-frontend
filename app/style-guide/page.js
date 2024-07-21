@@ -1,3 +1,4 @@
+import TextEditor from '@/src/components/TextEditor'
 import React from 'react'
 
 const StyleGuide = () => {
@@ -37,6 +38,10 @@ const StyleGuide = () => {
                             </h4>
                             <p className='text-md max-w-[800px] opacity-70'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quos quam nulla accusamus ducimus voluptate facilis atque, tempore sint nemo tempora omnis beatae aut, dolore consequatur, nihil quo! Iure, nesciunt!</p>
                         </div>
+
+
+
+                        <TextEditor/>
                     </div>
                 </div>
             </div>

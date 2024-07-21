@@ -3,6 +3,7 @@ import "./page.css";
 import { useState } from "react";
 import parse from "html-react-parser";
 import { getAxiosInstance } from "@/src/api";
+import HomePage from "@/src/pages/HomePage";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -48,13 +49,16 @@ export default function Home() {
   };
   return (
     <main className="">
-      <input
+      {/* <input
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         placeholder="Ask me anything"
       />
-      <button onClick={handleClick}>Find</button>
-      <div>{parse(blog, { replace: false })}</div>
+      <button onClick={handleClick}>Find</button> */}
+      {/* <div>{parse(blog, { replace: false })}</div> */}
+
+
+      <HomePage/>
     </main>
   );
 }
