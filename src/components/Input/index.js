@@ -2,7 +2,7 @@ import React from "react";
 
 const Input = ({ label, type, placeholder, name, error, id, ...reset }) => {
   return (
-    <div className="w-full relative flex flex-col py-md">
+    <div className="w-full relative flex flex-col">
       {label && <label className="text-[#6A4B7D] text-lg mb-xs" htmlFor="">{label}</label>}
       <input
         type={type}
@@ -12,9 +12,9 @@ const Input = ({ label, type, placeholder, name, error, id, ...reset }) => {
         className={'border border-[#EBEAEC] rounded-sm min-h-[40px] px-lg py-sm bg-[#FAFAFB]'}
         {...reset}
       />
-      <span className="flex items-center text-md text-red-500 rounded-lg mt-sm">
-        This is a error message
-      </span>
+      {error && <span className="flex items-center text-md text-red-500 rounded-lg mt-sm">
+        {error}
+      </span>}
     </div>
   );
 };
