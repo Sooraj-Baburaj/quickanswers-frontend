@@ -5,7 +5,7 @@ export const useAuthModal = () => {
     const [currentView, setCurrentView] = useState('login');
     const toggleModal = (view) => {
         setShowModal(prev => !prev)
-        setCurrentView(view)
+        view && setCurrentView(view)
     }
     return {
         showModal,

@@ -15,8 +15,6 @@ const views = {
 const AuthSwitcher = ({ authView = 'login' }) => {
     const { changeView, currentView } = useAuthSwitcher({ authView })
 
-
-
     return (
         <div className="w-full flex flex-col items-center bg-white max-w-[400px] p-[20px] rounded-md pointer-events-auto">
             <AuthSwitch changeView={changeView} activeTab={currentView} />
