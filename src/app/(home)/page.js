@@ -4,6 +4,7 @@ import { useState } from "react";
 import { getAxiosInstance } from "@/src/api";
 import HomeBanner from "./components/HomeBanner";
 import ItemsContainer from "./components/ItemsContainer";
+import AnswerGenerator from "./components/AnswerGenerator";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -59,6 +60,7 @@ export default function Home() {
 
       <section>
         <HomeBanner />
+        <AnswerGenerator/>
         <ItemsContainer />
       </section>
     </main>
