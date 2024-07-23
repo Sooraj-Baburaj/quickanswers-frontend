@@ -10,7 +10,9 @@ const AnswerGenerator = () => {
           <form className="w-full shadow-md rounded-full flex overflow-hidden bg-[#fff] p-sm">
             <span className="w-full flex">
               <Input
-                className={"w-full flex-1 px-lg py-md focus-visible:outline-none"}
+                className={
+                  "w-full flex-1 px-lg py-md focus-visible:outline-none"
+                }
                 type={"text"}
                 placeholder={"Ask your question here..."}
               />
@@ -19,13 +21,11 @@ const AnswerGenerator = () => {
               <button className="bg-primary flex items-center text-white whitespace-pre px-xl py-md leading-[1.4] rounded-full">
                 <span className="inline-block mr-[10px]">Generate Answer</span>
                 <span className="w-[20px] h-[20px] relative flex justify-center items-center">
-                  
-
                   {/* gemini icon */}
                   <span className="icon-gemini"></span>
 
                   {/* spinner */}
-                  <Spinner/>
+                  <Spinner />
                 </span>
               </button>
             </span>

@@ -3,6 +3,7 @@ import Logo from "../ui/Logo";
 import Button from "../ui/Button";
 import HeaderMenu from "../HeaderMenu";
 import Links from "../ui/Links";
+import AuthModal from "../AuthModal";
 
 const Header = () => {
   return (
@@ -20,14 +21,7 @@ const Header = () => {
           </div>
 
           {/* action buttons */}
-          <div className="w-auto flex space-x-lg ml-auto">
-            <Links href="/login" type="secondary">
-              login
-            </Links>
-            <Links href="/signup" type="primary">
-              Sign Up
-            </Links>
-          </div>
+          <AuthModal />
         </div>
       </div>
     </header>
