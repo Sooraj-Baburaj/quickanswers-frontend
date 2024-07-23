@@ -3,6 +3,7 @@ import AnswerHeading from '../AnswerHeading'
 import GeneratedText from '../GeneratedText'
 import AnswerAction from '../AnswerAction'
 import VersionsThumbnails from '../VersionsThumbnails'
+import Comments from '../Comments'
 
 const AnswerDetails = () => {
     return (
@@ -11,6 +12,7 @@ const AnswerDetails = () => {
             <GeneratedText />
             <AnswerAction />
             <VersionsThumbnails />
+            <Comments />
         </div>
     )
 }
