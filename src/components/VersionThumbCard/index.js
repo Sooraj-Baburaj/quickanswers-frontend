@@ -14,7 +14,7 @@ const VersionThumbCard = () => {
             <DateAndTime time={null} />
           </span>
         </div>
-        <p className="mb-md">
+        <p className="mb-md w-full max-w-[300px]">
           But I must explain to you how all this mistaken idea of denouncing
           pleasure..
         </p>
