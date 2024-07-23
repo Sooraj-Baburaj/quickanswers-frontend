@@ -1,6 +1,5 @@
 import React from "react";
 import DateAndTime from "../DateAndTime";
-import { Verified } from "@mui/icons-material";
 import VerifiedBy from "../VerifiedBy";
 import Links from "../ui/Links";
 import VoteBtn from "../ui/VoteBtn";
