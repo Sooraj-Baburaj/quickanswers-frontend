@@ -50,7 +50,7 @@ const QuestionThumbnail = () => {
         </p>
         <Links
           className="text-md space-x-md mt-md opacity-65 hover:opacity-100 duration-300"
-          href="/"
+          href="/answers/1"
         >
           <span>Read Answer</span>
           <span>
