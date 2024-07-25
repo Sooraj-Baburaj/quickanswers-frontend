@@ -1,6 +1,6 @@
 import React from "react";
 
-import AuthSwitch from "@/src/components/AuthSwitch";
+import AuthSwitch from "@/src/components/AuthModal/AuthSwitch";
 import Input from "@/src/components/ui/Input";
 import Button from "@/src/components/ui/Button/button";
 
