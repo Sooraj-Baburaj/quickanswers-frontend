@@ -31,7 +31,7 @@ const AnswerGenerator = () => {
               </button>
             </span>
           </form>
-          <AutoSuggestions />
+          {/* <AutoSuggestions /> */}
         </div>
       </div>
     </div>
