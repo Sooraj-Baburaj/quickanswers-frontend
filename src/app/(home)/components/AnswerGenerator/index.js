@@ -1,3 +1,4 @@
+import AutoSuggestions from "@/src/components/AutoSuggestions";
 import Input from "@/src/components/ui/Input";
 import Spinner from "@/src/components/ui/Spinner";
 import React from "react";
@@ -7,7 +8,7 @@ const AnswerGenerator = () => {
     <div className="w-full mt-[-24px] relative z-10">
       <div className="container">
         <div className="w-full relative flex">
-          <form className="w-full shadow-md rounded-full flex overflow-hidden bg-[#fff] p-sm">
+          <form className="w-full shadow-md rounded-full flex overflow-hidden bg-[#fff] p-sm z-[9]">
             <span className="w-full flex">
               <Input
                 className={
@@ -30,6 +31,7 @@ const AnswerGenerator = () => {
               </button>
             </span>
           </form>
+          <AutoSuggestions />
         </div>
       </div>
     </div>
