@@ -6,7 +6,7 @@ import { SwiperSlide } from "swiper/react";
 
 const TopCreators = () => {
   return (
-    <div className="w-full relative pt-[30px] mb-[40px] overflow-hidden">
+    <div className="w-full relative pt-[30px] mb-[48px] overflow-hidden">
       <div className="container">
         <div className="w-full relative flex mb-[16px]">
           <h4 className="w-full text-xl font-semibold">Top Creators</h4>
@@ -18,7 +18,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -28,7 +28,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -38,7 +38,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -48,7 +48,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -58,7 +58,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -68,7 +68,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -78,7 +78,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -88,7 +88,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />
@@ -98,7 +98,7 @@ const TopCreators = () => {
               <Links
                 href={"/"}
                 className={
-                  "flex p-[16px] border border-primary-border rounded-md"
+                  "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
                 <Avatar />

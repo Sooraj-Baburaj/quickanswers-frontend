@@ -5,19 +5,19 @@ import Icon from "../ui/Icon";
 const CategoryTab = () => {
   return (
     <div className="w-full flex  space-x-lg">
-      <ul className="w-auto space-x-lg flex">
+      <ul className="w-auto space-x-md flex">
         <li>
           <button className="whitespace-pre bg-primary text-white px-lg py-sm rounded-2xl border border-primary">
             All
           </button>
         </li>
         <li>
-          <button className="whitespace-pre bg-transparent text-primary px-lg py-sm rounded-2xl border border-primary-border">
+          <button className="whitespace-pre bg-transparent text-primary px-lg py-sm rounded-2xl border border-primary-border hover:bg-primary-border duration-300 transition-all">
             Health & Wellness
           </button>
         </li>
         <li>
-          <button className="whitespace-pre bg-transparent text-primary px-lg py-sm rounded-2xl border border-primary-border">
+          <button className="whitespace-pre bg-transparent text-primary px-lg py-sm rounded-2xl border border-primary-border hover:bg-primary-border duration-300 transition-all">
             Nutrition
           </button>
         </li>

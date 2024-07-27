@@ -1,32 +1,64 @@
 import React from "react";
-import DateAndTime from "../DateAndTime";
-import VerifiedBy from "../VerifiedBy";
 import Links from "../ui/Links";
-import VoteBtn from "../ui/VoteBtn";
+import Icon from "../ui/Icon";
+import Tag from "../Tag";
 
 const RelatedItemsCard = () => {
   return (
-    <div className="w-full flex flex-col bg-[#FAFAFB] p-lg rounded-lg">
-      <h4 className="text-xl font-secondary font-bold">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry.
-      </h4>
-      <span className="w-full relative flex text-[12px] mt-sm items-center space-x-md">
-        <DateAndTime />
-        <VerifiedBy iconOnly />
-      </span>
-      <p className="text-sm mt-sm">
-        Contrary to popular belief, Lorem Ipsum is not simply random text. It
-        has roots in a piece of classical Latin literature from 45 BC, making it
-        over 2000 years old. Richard McClintock,...{" "}
-      </p>
+    <div className="w-full flex flex-col bg-[#F1FBF9] border-primary-border border p-lg rounded-lg">
+      <div className="w-full flex flex-col">
+        <div className="w-full flex-col mb-xs">
+          <div className="w-full flex items-center text-[#787878] text-sm space-x-md">
+            <span>20 June 2024</span>
+            <span>10:00PM</span>
+            <span className="w-[20px] rounded-full h-[20px] flex justify-center items-center">
+              <Icon icon="tick-mark" size={20} color="#000" />
+            </span>
+          </div>
+        </div>
+        <h4 className="text-xl leading-[1.3] font-medium mb-sm">
+          Inverse formula of exponential moving average (ewm) in pandas{" "}
+        </h4>
+        <p className="text-md opacity-60">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, facilis
+          dolorum. Qui, molestias. Autem quidem temporibus, perspiciatis rem
+          aspernatur obcaecati ex quod iste itaque explicabo reprehenderit,
+          nulla quis est. Inventore?
+        </p>
 
-      <div className="w-full flex justify-between mt-lg">
-        <span className="w-auto">
-          <VoteBtn />
-        </span>
-        <Links href="/" className="text-md font-medium">
-          Edit Answer
+        <div className="w-full fled items-start mt-md">
+          <ul className="w-full flex space-x-md [&>*]:mb-md flex-wrap">
+            <li>
+              <div className="px-md w-full text-md h-[32px] min-w-[53px] flex justify-center items-center rounded-full border border-[#E8E4EB]">
+                <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
+                  <Icon icon="tick" size={14} color="#000" />
+                </span>
+                <span>
+                  <span className="font-medium">20</span> found this helpful
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="px-md w-full text-md h-[32px] min-w-[53px] flex justify-center items-center rounded-full border border-[#E8E4EB]">
+                <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
+                  <Icon icon="comment" size={12} color="#000" />
+                </span>
+                <span>53</span>
+              </div>
+            </li>
+            <li>
+              <Tag title="Technology" size="lg" />
+            </li>
+          </ul>
+        </div>
+        <Links
+          className="text-md space-x-md mt-sm opacity-65 hover:opacity-100 duration-300"
+          href="/answers/1"
+        >
+          <span>Read Answer</span>
+          <span>
+            <Icon icon="arrows" size={10} color="#000" />
+          </span>
         </Links>
       </div>
     </div>
