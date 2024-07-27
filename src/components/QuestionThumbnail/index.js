@@ -6,27 +6,7 @@ import Links from "../ui/Links";
 const QuestionThumbnail = () => {
   return (
     <div className="w-full flex flex-wrap">
-      <div className="w-max fled flex-col items-start">
-        <ul className="w-full flex flex-col space-y-md">
-          <li>
-            <div className="px-md w-full text-md h-[32px] min-w-[53px] flex justify-center items-center rounded-full border border-[#E8E4EB]">
-              <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
-                <Icon icon="like" size={18} color="#000" />
-              </span>
-              <span>53</span>
-            </div>
-          </li>
-          <li>
-            <div className="px-md w-full text-md h-[32px] min-w-[53px] flex justify-center items-center rounded-full border border-[#E8E4EB]">
-              <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
-                <Icon icon="comment" size={12} color="#000" />
-              </span>
-              <span>53</span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div className="w-full flex flex-col flex-1 pl-2xl">
+      <div className="w-full flex flex-col">
         <div className="w-full flex-col mb-xs">
           <div className="w-full flex items-center text-[#787878] text-sm space-x-md">
             <span>20 June 2024</span>
@@ -36,20 +16,49 @@ const QuestionThumbnail = () => {
             </span>
           </div>
         </div>
-        <h4 className="text-lg leading-[1.6] font-medium mb-sm">
+        <h4 className="text-xl leading-[1.3] font-medium mb-sm">
           Inverse formula of exponential moving average (ewm) in pandas{" "}
-          <span>
-            <Tag />
-          </span>
         </h4>
-        <p className="text-md opacity-70">
+        <p className="text-md opacity-60">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, facilis
           dolorum. Qui, molestias. Autem quidem temporibus, perspiciatis rem
           aspernatur obcaecati ex quod iste itaque explicabo reprehenderit,
           nulla quis est. Inventore?
         </p>
+
+        <div className="w-full fled items-start mt-md">
+          <ul className="w-full flex space-x-md [&>*]:mb-md flex-wrap">
+            <li>
+              <div className="px-md w-full text-md h-[32px] min-w-[53px] flex justify-center items-center rounded-full border border-[#E8E4EB]">
+                <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
+                  <Icon icon="tick" size={14} color="#000" />
+                </span>
+                <span>
+                  <span className="font-medium">20</span> found this helpful
+                </span>
+              </div>
+            </li>
+            <li>
+              <div className="px-md w-full text-md h-[32px] min-w-[53px] flex justify-center items-center rounded-full border border-[#E8E4EB]">
+                <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
+                  <Icon icon="comment" size={12} color="#000" />
+                </span>
+                <span>53</span>
+              </div>
+            </li>
+            <li>
+              <Tag title="Technology" size="lg" />
+            </li>
+            <li>
+              <Tag title="Lifestyle" size="lg" />
+            </li>
+            <li>
+              <Tag title="Travel" size="lg" />
+            </li>
+          </ul>
+        </div>
         <Links
-          className="text-md space-x-md mt-md opacity-65 hover:opacity-100 duration-300"
+          className="text-md space-x-md mt-sm opacity-65 hover:opacity-100 duration-300"
           href="/answers/1"
         >
           <span>Read Answer</span>

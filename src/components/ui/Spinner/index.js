@@ -8,7 +8,7 @@ const Spinner = () => {
     >
       <svg
         aria-hidden="true"
-        className="w-[20px] h-[20px] text-[#686868] animate-spin fill-white"
+        className="w-[20px] h-[20px] text-[#d5d5d573] animate-spin fill-white"
         viewBox="0 0 100 101"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

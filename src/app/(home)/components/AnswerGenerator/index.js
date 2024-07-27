@@ -7,7 +7,7 @@ const AnswerGenerator = () => {
   return (
     <div className="w-full mt-[-24px] relative z-10">
       <div className="container">
-        <div className="w-full relative flex">
+        <div className="w-full relative flex max-w-[800px] mx-auto">
           <form className="w-full shadow-md rounded-full flex overflow-hidden bg-[#fff] p-sm z-[9]">
             <span className="w-full flex">
               <Input

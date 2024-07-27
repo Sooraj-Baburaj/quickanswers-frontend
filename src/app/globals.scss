@@ -9,7 +9,7 @@
 
 :root {
   // colors
-  --primary-color: #451e5d;
+  --primary-color: #1d564a;
   --secondary-color: #000;
   --tertiary-color: #000;
 
@@ -25,7 +25,7 @@
   --secondary-dark-color: #000;
   --tertiary-dark-color: #000;
 
-  --fp-border-color: #e8e4eb;
+  --primary-border-color: #d4ece7;
   --secondary-border-color: #e8e4eb;
   --tertiary-border-color: #000;
 
@@ -86,7 +86,7 @@ button {
 }
 
 .icon-gemini {
-  background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.0803 12C6.68228 7.24948 10.3443 6.06186 12.1001 6.06186C9.88228 6.06186 6.59515 4.16495 6.0803 0C5.40703 4.37113 2.1199 5.73196 0.100098 6.06186C1.44663 6.06186 5.48624 7.21649 6.0803 12Z' fill='%235286D2'/%3E%3C/svg%3E%0A");
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.07981 12C6.68179 7.24948 10.3438 6.06186 12.0996 6.06186C9.88179 6.06186 6.59466 4.16495 6.07981 0C5.40654 4.37113 2.11941 5.73196 0.0996094 6.06186C1.44614 6.06186 5.48575 7.21649 6.07981 12Z' fill='white'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: center;
   width: 14px;

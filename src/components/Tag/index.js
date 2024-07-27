@@ -11,7 +11,7 @@ const Tag = ({ title, size = "sm" }) => {
       : "";
   return (
     <button
-      className={`bg-[#f4ecf9] ${sizes} font-normal rounded-full  leading-none`}
+      className={`bg-[#30A48C] bg-opacity-10 ${sizes} font-normal rounded-full  leading-none`}
     >
       {title}
     </button>

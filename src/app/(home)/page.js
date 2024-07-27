@@ -5,6 +5,8 @@ import { getAxiosInstance } from "@/src/api";
 import HomeBanner from "./components/HomeBanner";
 import ItemsContainer from "./components/ItemsContainer";
 import AnswerGenerator from "./components/AnswerGenerator";
+import TopCreators from "./components/TopCreators";
+import ItemsGrid from "./components/ItemsGrid";
 
 export default function Home() {
   const [search, setSearch] = useState("");
@@ -61,8 +63,8 @@ export default function Home() {
       <section>
         <HomeBanner />
         <AnswerGenerator />
-        <ItemsContainer />
-
+        <TopCreators />
+        <ItemsGrid />
       </section>
     </main>
   );
