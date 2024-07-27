@@ -54,11 +54,22 @@
   --text-4xl: #{size(24)};
 }
 
-.ql-toolbar {
-  display: none;
+// .ql-toolbar {
+//   display: none;
+// }
+// .ql-toolbar.ql-snow + .ql-container.ql-snow {
+//   border-top: 1px solid #ccc !important;
+// }
+.ql-toolbar.ql-snow {
+  border: none !important;
 }
-.ql-toolbar.ql-snow + .ql-container.ql-snow {
-  border-top: 1px solid #ccc !important;
+.ql-container.ql-snow {
+  border: none !important;
+  border-top: 1px solid #e8e4eb !important;
+}
+.quill {
+  border: 1px solid #e8e4eb !important;
+  border-radius: 10px;
 }
 
 body,

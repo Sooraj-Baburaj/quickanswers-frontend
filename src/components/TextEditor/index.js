@@ -5,9 +5,7 @@ import Icon from "../ui/Icon";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-// const QuillEditor = dynamic(() => "./QuillEditor", {
-//   ssr: false,
-// });
+import QuillEditor from "./QuillEditor";
 
 const TextEditor = () => {
   const [value, setValue] = useState(
@@ -73,7 +71,7 @@ const TextEditor = () => {
 
   return (
     <div className="w-full relative">
-      {pos && (
+      {Object.keys(pos).length !== 0 && (
         <motion.div
           className="fixed bg-primary h-[50px] flex items-center text-white space-x-md px-sm rounded-full z-10"
           animate={{ top: `${pos.y - 70}px`, left: pos.x }}
@@ -97,13 +95,13 @@ const TextEditor = () => {
           />
         </motion.div>
       )}
-      {/* <QuillEditor
+      <QuillEditor
         ref={selectTextRef}
         theme="snow"
         value={value}
         onChange={setValue}
         toolbar={false}
-      /> */}
+      />
     </div>
   );
 };
