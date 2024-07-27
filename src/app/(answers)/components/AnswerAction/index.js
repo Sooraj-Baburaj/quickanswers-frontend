@@ -30,7 +30,7 @@ const AnswerAction = () => {
         </ul>
       </div>
       <div className="w-auto space-x-md">
-        <Links href="/answers/1/version" type="primary">
+        <Links href="/answers/1/versions" type="primary">
           View Answer history
         </Links>
         <Button icon={<Icon icon="like" size={20} color="#fff" />}>

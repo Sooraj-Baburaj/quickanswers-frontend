@@ -4,16 +4,16 @@ import React from "react";
 
 const Comments = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative pb-3xl">
       {/* title */}
       <h4 className="w-full text-xl font-semibold mb-xl">Comments</h4>
 
       {/* container */}
-      <div className="w-full relative flex flex-col bg-[#F1FBF9] p-xl rounded-md">
+      <div className="w-full relative flex flex-col bg-[#F1FBF9] p-xl rounded-md border-t border-t-primary-border">
         {/* comment group */}
         <div className="w-full relative">
           <div className="w-full relative flex flex-col pb-xl last:pb-[0] pl-[40px] first:pl-[0] group">
-            <span className="w-[20px] translate-x-[10px] mb-[24px] absolute after:w-[3px] after:h-[40px] after:bg-primary-border after:left-[-3px] after:absolute after:top-[-40px] border-l-[3px] h-[calc(100%-25px)] rounded-bl-[15px]  border-l-pribg-primary-border border-b-[3px] border-b-pribg-primary-border flex bottom-[-40px] left-[0] group-first:after:hidden group-last:hidden"></span>
+            <span className="w-[20px] translate-x-[10px] mb-[24px] absolute after:w-[3px] after:h-[40px] after:bg-primary-border after:left-[-3px] after:absolute after:top-[-40px] border-l-[3px] h-[calc(100%-25px)] rounded-bl-[15px]  border-l-primary-border border-b-[3px] border-b-primary-border flex bottom-[-40px] left-[0] group-first:after:hidden group-last:hidden"></span>
             <Avatar />
             <div className="w-full pl-[46px]">
               <p className="w-full text-md mt-md max-w-[600px]">
@@ -32,7 +32,7 @@ const Comments = () => {
 
           {/* reply comment */}
           <div className="w-full relative flex flex-col pb-xl last:pb-[0] pl-[40px] first:pl-[0] group">
-            <span className="w-[20px] translate-x-[10px] mb-[24px] absolute after:w-[3px] after:h-[40px] after:bg-primary-border after:left-[-3px] after:absolute after:top-[-40px] border-l-[3px] h-[calc(100%-25px)] rounded-bl-[15px]  border-l-pribg-primary-border border-b-[3px] border-b-pribg-primary-border flex bottom-[-40px] left-[0] group-first:after:hidden group-last:hidden"></span>
+            <span className="w-[20px] translate-x-[10px] mb-[24px] absolute after:w-[3px] after:h-[40px] after:bg-primary-border after:left-[-3px] after:absolute after:top-[-40px] border-l-[3px] h-[calc(100%-25px)] rounded-bl-[15px]  border-l-primary-border border-b-[3px] border-b-primary-border flex bottom-[-40px] left-[0] group-first:after:hidden group-last:hidden"></span>
             <Avatar />
             <div className="w-full pl-[46px]">
               <p className="w-full text-md mt-md max-w-[600px]">
@@ -50,7 +50,7 @@ const Comments = () => {
           </div>
 
           <div className="w-full relative flex flex-col pb-xl last:pb-[0] pl-[40px] first:pl-[0] group">
-            <span className="w-[20px] translate-x-[10px] mb-[24px] absolute after:w-[3px] after:h-[40px] after:bg-primary-border after:left-[-3px] after:absolute after:top-[-40px] border-l-[3px] h-[calc(100%-25px)] rounded-bl-[15px]  border-l-pribg-primary-border border-b-[3px] border-b-pribg-primary-border flex bottom-[-40px] left-[0] group-first:after:hidden group-last:hidden"></span>
+            <span className="w-[20px] translate-x-[10px] mb-[24px] absolute after:w-[3px] after:h-[40px] after:bg-primary-border after:left-[-3px] after:absolute after:top-[-40px] border-l-[3px] h-[calc(100%-25px)] rounded-bl-[15px]  border-l-primary-border border-b-[3px] border-b-primary-border flex bottom-[-40px] left-[0] group-first:after:hidden group-last:hidden"></span>
             <Avatar />
             <div className="w-full pl-[46px]">
               <p className="w-full text-md mt-md max-w-[600px]">

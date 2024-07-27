@@ -7,15 +7,9 @@ const AutoSuggestions = () => {
   return (
     <>
       <div className="absolute w-full pointer-events-none pt-[28px] z-[8]">
-        <div className="w-full bg-[#fff] flex flex-col rounded-b-[10px] pointer-events-auto pt-[40px] pb-[16px] p-[24px]  h-[calc(100vh-300px)] shadow-md">
+        <div className="w-full bg-[#fff] flex flex-col rounded-b-[10px] pointer-events-auto pt-[40px] pb-[16px] p-[24px]  max-h-[calc(100vh-300px)] shadow-md">
           <div className="w-full relative flex-1 h-full overflow-hidden overflow-y-auto">
             <ul className="w-full flex flex-col">
-              <li className="w-full mb-lg pb-lg border-b border-dashed border-b-[#E8E4EB] last:border-b-0">
-                <AutoSuggestionsItem />
-              </li>
-              <li className="w-full mb-lg pb-lg border-b border-dashed border-b-[#E8E4EB] last:border-b-0">
-                <AutoSuggestionsItem />
-              </li>
               <li className="w-full mb-lg pb-lg border-b border-dashed border-b-[#E8E4EB] last:border-b-0">
                 <AutoSuggestionsItem />
               </li>

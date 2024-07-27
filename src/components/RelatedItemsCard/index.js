@@ -5,7 +5,7 @@ import Tag from "../Tag";
 
 const RelatedItemsCard = () => {
   return (
-    <div className="w-full flex flex-col bg-[#F1FBF9] border-primary-border border p-lg rounded-lg">
+    <div className="w-full flex flex-col border-primary-border border p-lg rounded-lg">
       <div className="w-full flex flex-col">
         <div className="w-full flex-col mb-xs">
           <div className="w-full flex items-center text-[#787878] text-sm space-x-md">
