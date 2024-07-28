@@ -7,12 +7,12 @@ const Images = ({
   priority = false,
   aspectRatio,
   size = "100vw",
-  classNames,
-  ...reset
+  className,
+  ...props
 }) => {
   return (
     <div
-      className={`w-full relative ${classNames}`}
+      className={`w-full relative ${className}`}
       style={{ aspectRatio: aspectRatio }}
     >
       <Image
@@ -21,7 +21,7 @@ const Images = ({
         priority={priority}
         fill
         objectFit="cover"
-        {...reset}
+        {...props}
       />
     </div>
   );

@@ -1,11 +1,11 @@
-import React from 'react'
-import classes from './button.module.scss'
-const Button = ({title, type = 'primary', classNames}) => {
+import React from "react";
+import classes from "./button.module.scss";
+const Button = ({ title, type = "primary", className }) => {
   return (
-    <button className={`${classes[type]} ${classNames}`}>
-        <span>{title}</span>
+    <button className={`${classes[type]} ${className}`}>
+      <span>{title}</span>
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

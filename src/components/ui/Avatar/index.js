@@ -11,7 +11,7 @@ const Avatar = ({ invert }) => {
       <div className="w-[40px] rounded-full aspect-square overflow-hidden bg-[#c9c9c9]">
         <Images
           src={"/images/banner-home.jpg"}
-          classNames={"absolute w-full h-full"}
+          className={"absolute w-full h-full"}
         />
       </div>
       <div className="w-full flex flex-col pl-md">

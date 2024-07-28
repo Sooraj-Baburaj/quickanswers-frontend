@@ -5,7 +5,8 @@ import Icon from "../ui/Icon";
 import Button from "../ui/Button";
 import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
-import QuillEditor from "./QuillEditor";
+
+const QuillEditor = dynamic(() => import("./QuillEditor"), { ssr: false });
 
 const TextEditor = () => {
   const [value, setValue] = useState(
@@ -55,9 +56,7 @@ const TextEditor = () => {
         }
       };
     }
-  }, []);
-
-  console.log(pos);
+  }, [value]);
 
   const clickBold = () => {
     const quill = selectTextRef.current.getEditor();
@@ -90,13 +89,13 @@ const TextEditor = () => {
           </button>
           <Button
             type="secondary"
-            classNames="!text-white !border-white"
+            className="!text-white !border-white"
             title={"Expand content"}
           />
         </motion.div>
       )}
       <QuillEditor
-        ref={selectTextRef}
+        editorRef={selectTextRef}
         theme="snow"
         value={value}
         onChange={setValue}
