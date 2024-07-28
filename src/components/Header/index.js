@@ -1,9 +1,7 @@
 import React from "react";
 import Logo from "../ui/Logo";
-import Button from "../ui/Button";
 import HeaderMenu from "../HeaderMenu";
-import Links from "../ui/Links";
-import AuthModal from "../AuthModal";
+import AuthModal from "../Auth";
 
 const Header = () => {
   return (

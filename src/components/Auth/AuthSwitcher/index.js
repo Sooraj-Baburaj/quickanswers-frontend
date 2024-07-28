@@ -1,14 +1,14 @@
 import React from "react";
-import LoginView from "../LoginView";
+import Login from "../Login";
 import { useAuthSwitcher } from "./useAuthSwitcher";
-import SignUpView from "../SignUpView";
-import ForgetPasswordView from "../ForgetPasswordView";
+import SignUp from "../SignUp";
+import ForgetPassword from "../ForgetPassword";
 import AuthSwitch from "../AuthSwitch";
 
 const views = {
-  login: <LoginView />,
-  sign_up: <SignUpView />,
-  forget_password: <ForgetPasswordView />,
+  login: <Login />,
+  sign_up: <SignUp />,
+  forget_password: <ForgetPassword />,
 };
 
 const AuthSwitcher = ({ authView = "login" }) => {

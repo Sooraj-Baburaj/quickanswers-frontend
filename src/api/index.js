@@ -2,7 +2,7 @@ import axios from "axios";
 
 let token = "";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = process.env.NEXT_PUBLIC_BACKEND_URL;
 
 export const getAxiosInstance = async () => {
   try {
