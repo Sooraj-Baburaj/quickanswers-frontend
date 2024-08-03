@@ -8,12 +8,9 @@ import dynamic from "next/dynamic";
 
 const QuillEditor = dynamic(() => import("./QuillEditor"), { ssr: false });
 
-const TextEditor = () => {
-  const [value, setValue] = useState(
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque quos quam nulla accusamus ducimus voluptate facilis atque, tempore sint nemo tempora omnis beatae aut, dolore consequatur, nihil quo! Iure, nesciunt!"
-  );
+const TextEditor = ({ value = "", onChange = () => {} }) => {
   const [pos, setPos] = useState({});
-  const selectTextRef = useRef(null);
+  const editorRef = useRef(null);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -35,21 +32,21 @@ const TextEditor = () => {
           // Text is selected, ensure toggleArea is visible
           console.log("no hide");
         } else {
-          // No text selected, hide toggleArea
+          setPos({});
           console.log("hide");
         }
       };
 
-      if (selectTextRef?.current?.editingArea) {
-        selectTextRef.current.editingArea.addEventListener(
+      if (editorRef?.current?.editingArea) {
+        editorRef.current.editingArea.addEventListener(
           "mouseup",
           handleMouseUp
         );
       }
 
       return () => {
-        if (selectTextRef?.current?.editingArea) {
-          selectTextRef.current.editingArea.removeEventListener(
+        if (editorRef?.current?.editingArea) {
+          editorRef.current.editingArea.removeEventListener(
             "mouseup",
             handleMouseUp
           );
@@ -59,7 +56,7 @@ const TextEditor = () => {
   }, [value]);
 
   const clickBold = () => {
-    const quill = selectTextRef.current.getEditor();
+    const quill = editorRef.current.getEditor();
     const range = quill.getSelection();
 
     if (range) {
@@ -95,10 +92,10 @@ const TextEditor = () => {
         </motion.div>
       )}
       <QuillEditor
-        editorRef={selectTextRef}
+        editorRef={editorRef}
         theme="snow"
         value={value}
-        onChange={setValue}
+        onChange={onChange}
         toolbar={false}
       />
     </div>

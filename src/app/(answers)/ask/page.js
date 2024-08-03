@@ -1,6 +1,7 @@
 import TextEditor from "@/src/components/TextEditor";
 import Spinner from "@/src/components/ui/Spinner";
 import React from "react";
+import QuestionForm from "./components/Form";
 
 const Ask = () => {
   return (
@@ -17,30 +18,7 @@ const Ask = () => {
             </button>
           </div>
 
-          <div className="w-full relative">
-            <div className="w-full mb-md">
-              <h4 className="text-xl font-medium">Ask your question</h4>
-            </div>
-            <div className="w-full relative flex flex-col">
-              <input
-                className="border border-[#E8E4EB] px-lg py-md rounded-[10px]"
-                type="text"
-                placeholder="Enter your question"
-                // value={
-                //   "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-                // }
-              />
-            </div>
-          </div>
-
-          <div className="w-full relative">
-            <div className="w-full mb-md">
-              <h4 className="text-xl font-medium">Description</h4>
-            </div>
-            <div className="w-full relative flex flex-col">
-              <TextEditor />
-            </div>
-          </div>
+          <QuestionForm />
 
           <div className="w-full relative">
             <div className="w-full mb-md">
