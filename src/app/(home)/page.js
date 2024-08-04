@@ -4,7 +4,7 @@ import { useState } from "react";
 import { getAxiosInstance } from "@/src/api";
 import HomeBanner from "./components/HomeBanner";
 import ItemsContainer from "./components/ItemsContainer";
-import AnswerGenerator from "./components/AnswerGenerator";
+import BannerSearch from "./components/BannerSearch";
 import TopCreators from "./components/TopCreators";
 import ItemsGrid from "./components/ItemsGrid";
 
@@ -62,7 +62,7 @@ export default function Home() {
 
       <section>
         <HomeBanner />
-        <AnswerGenerator />
+        <BannerSearch />
         <TopCreators />
         <ItemsGrid />
       </section>

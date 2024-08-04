@@ -1,5 +1,5 @@
 import useSWRImmutable from "swr/immutable";
-import { getAxiosInstance } from "@src/api";
+import { getAxiosInstance } from "@/src/api";
 
 export const fetcher = async (url) => {
   const api = await getAxiosInstance();
