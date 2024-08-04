@@ -8,7 +8,7 @@ import dynamic from "next/dynamic";
 
 const QuillEditor = dynamic(() => import("./QuillEditor"), { ssr: false });
 
-const TextEditor = ({ value = "", onChange = () => {} }) => {
+const TextEditor = ({ value = "", onChange = () => {}, ...props }) => {
   const [pos, setPos] = useState({});
   const editorRef = useRef(null);
 
@@ -97,6 +97,7 @@ const TextEditor = ({ value = "", onChange = () => {} }) => {
         value={value}
         onChange={onChange}
         toolbar={false}
+        {...props}
       />
     </div>
   );
