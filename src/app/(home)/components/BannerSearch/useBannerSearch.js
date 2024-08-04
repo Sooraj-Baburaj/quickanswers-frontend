@@ -28,7 +28,6 @@ const useBannerSearch = () => {
   };
 
   const handleCreateQuestion = () => {
-    if (loading) return;
     setLoading(true);
     createQuestion({ question: searchValue }).then((r) => {
       setLoading(false);
