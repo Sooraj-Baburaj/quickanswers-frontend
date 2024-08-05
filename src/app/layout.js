@@ -2,6 +2,7 @@ import { Lato, Roboto } from "next/font/google";
 import "./globals.scss";
 import Header from "@/src/components/Header";
 import { Toaster } from "sonner";
+import RecoilContextProvider from "../components/RecoilContextProvider";
 
 const robotoFont = Roboto({
   weight: ["400", "500", "700", "900"],
@@ -27,10 +28,12 @@ export default function RootLayout({ children }) {
           "--secondary-font": latoFont.style.fontFamily,
         }}
       >
-        <Toaster position="top-right" />
-        <Header />
-        {children}
-        <div id="portal"></div>
+        <RecoilContextProvider>
+          <Toaster position="top-right" />
+          <Header />
+          {children}
+          <div id="portal"></div>
+        </RecoilContextProvider>
       </body>
     </html>
   );

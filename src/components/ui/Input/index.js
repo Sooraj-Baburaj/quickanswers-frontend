@@ -3,11 +3,13 @@ import React from "react";
 const Input = ({
   id,
   error,
+  subText,
   type = "text",
   value = "",
   label = "",
   placeholder = "",
   name = "",
+  classNames = "",
   onChange = () => {},
   ...props
 }) => {
@@ -23,17 +25,18 @@ const Input = ({
         placeholder={placeholder}
         name={name}
         id={id}
-        className={
-          "border border-[#cacaca] rounded-sm min-h-[40px] px-lg py-sm bg-[#FAFAFB]"
-        }
+        className={`border border-[#E8E4EB] min-h-[40px] px-lg py-sm rounded-[10px] ${classNames}`}
         value={value}
         onChange={onChange}
         {...props}
       />
       {error && (
-        <span className="flex items-center text-md text-red-500 rounded-lg mt-sm">
+        <span className="flex items-center text-sm text-red-500 rounded-lg mt-sm px-sm">
           {error}
         </span>
+      )}
+      {subText && (
+        <span className="flex items-center text-md mt-sm px-sm">{subText}</span>
       )}
     </div>
   );

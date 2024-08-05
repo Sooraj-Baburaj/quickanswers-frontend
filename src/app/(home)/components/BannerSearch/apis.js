@@ -10,6 +10,19 @@ export const createQuestion = async (params) => {
   }
 };
 
+export const findExistingQuestion = async (params) => {
+  try {
+    const api = await getAxiosInstance();
+    const response = await api.post(
+      "/questions/find-existing-question",
+      params
+    );
+    return response;
+  } catch (error) {
+    return error.response;
+  }
+};
+
 export const searchQuestion = async (search, signal) => {
   try {
     const api = await getAxiosInstance();
