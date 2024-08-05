@@ -28,7 +28,11 @@ const SuggestionsItem = ({ item }) => {
         <h4 className="text-lg leading-[1.6] font-medium mb-sm">
           {item?.document?.question ?? ""}
         </h4>
-        <p className="text-md opacity-70">{item?.document?.answer ?? ""}</p>
+        <p className="text-md opacity-70">
+          {item?.document?.answer
+            ? `${item?.document?.answer?.slice(0, 100)}...`
+            : ""}
+        </p>
         {/* <div className="w-full relative flex flex-col mt-md mb-sm">
           <ul className="flex flex-wrap w-auto -m-sm">
             <li className="p-sm">

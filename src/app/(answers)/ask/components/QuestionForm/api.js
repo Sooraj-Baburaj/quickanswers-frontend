@@ -34,7 +34,6 @@ export const getAnswerStream = async (questionId, callback = () => {}) => {
       toast.error("Failed to generate an answer!");
     }
   } catch (error) {
-    console.log(error);
     toast.error("Failed to generate an answer!");
     return;
   }

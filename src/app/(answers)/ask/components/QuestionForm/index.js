@@ -9,7 +9,9 @@ import GenerateButton from "@/src/app/(home)/components/BannerSearch/GenerateBut
 const QuestionForm = () => {
   const turndownService = new TurndownService();
 
-  const { formik, showDescription, handleShowDescription } = useQuestionForm();
+  const { formik, showDescription, loading, handleShowDescription } =
+    useQuestionForm();
+
   return (
     <>
       <div className="w-full relative">
@@ -46,16 +48,17 @@ const QuestionForm = () => {
           <div className="w-full relative flex flex-col">
             <TextEditor
               placeholder="Enter details here"
-              onChange={(e) =>
-                console.log(JSON.stringify(turndownService.turndown(e)), "desc")
-              }
+              value={formik.values.description}
+              onChange={(e) => {
+                formik.setFieldValue("description", e);
+              }}
             />
           </div>
         </div>
       )}
       {/* <Categories /> */}
       <div className="w-full flex justify-end pt-[8px]">
-        <GenerateButton handleClick={formik.handleSubmit} />
+        <GenerateButton loading={loading} handleClick={formik.handleSubmit} />
       </div>
     </>
   );

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { useFormik } from "formik";
-import { useRecoilState, useSetRecoilState } from "recoil";
+import { useRecoilState } from "recoil";
 
 import { createQuestion } from "@/src/app/(home)/components/BannerSearch/apis";
 import { getAnswerStream } from "./api";
@@ -11,7 +11,7 @@ import AnswerState from "@/src/recoil/answerAtom";
 const useQuestionForm = () => {
   const searchParams = useSearchParams();
 
-  const setAnswerState = useSetRecoilState(AnswerState);
+  const [answerState, setAnswerState] = useRecoilState(AnswerState);
 
   const [showDescription, setShowDescription] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -24,14 +24,16 @@ const useQuestionForm = () => {
     onSubmit: (values, { setErrors }) => {
       setLoading(true);
       createQuestion(values).then(async (r) => {
-        console.log(r, "res q");
         setLoading(false);
         if (r?.status === 200) {
-          setLoading(true);
+          setAnswerState((state) => ({ ...state, isGenerating: true }));
           await getAnswerStream(r?.data?.data?._id, (chunk) =>
-            setAnswerState((state) => ({ answer: state.answer + chunk }))
+            setAnswerState((state) => ({
+              ...state,
+              generatedAnswer: state.generatedAnswer + chunk,
+            }))
           );
-          setLoading(false);
+          setAnswerState((state) => ({ ...state, isGenerating: false }));
         } else if (r?.status === 409) {
           setErrors({
             question: (
@@ -54,7 +56,12 @@ const useQuestionForm = () => {
   const handleShowDescription = () => {
     setShowDescription(true);
   };
-  return { formik, showDescription, loading, handleShowDescription };
+  return {
+    formik,
+    showDescription,
+    loading: loading || answerState.isGenerating,
+    handleShowDescription,
+  };
 };
 
 export default useQuestionForm;

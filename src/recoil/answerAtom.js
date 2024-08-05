@@ -3,7 +3,9 @@ import { atom } from "recoil";
 const AnswerState = atom({
   key: "AnswerState",
   default: {
-    answer: "",
+    generatedAnswer: "",
+    isGenerating: false,
+    editedAnswer: "",
   },
 });
 
