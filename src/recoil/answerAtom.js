@@ -1,10 +1,10 @@
 import { atom } from "recoil";
 
-const answerState = atom({
-  key: "answerState",
+const AnswerState = atom({
+  key: "AnswerState",
   default: {
     answer: "",
   },
 });
 
-export default answerState;
+export default AnswerState;

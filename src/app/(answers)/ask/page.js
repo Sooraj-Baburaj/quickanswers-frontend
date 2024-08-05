@@ -1,8 +1,8 @@
 import React from "react";
 
-import TextEditor from "@/src/components/TextEditor";
 import QuestionForm from "./components/QuestionForm";
 import GoBackButton from "@/src/components/GoBackButton";
+import AnswerGenerateAndEdit from "./components/AnswerGenerateAndEdit";
 
 const Ask = async () => {
   return (
@@ -13,14 +13,7 @@ const Ask = async () => {
 
           <QuestionForm />
 
-          <div className="w-full relative">
-            <div className="w-full mb-md">
-              <h4 className="text-xl font-medium">Answer</h4>
-            </div>
-            <div className="w-full relative flex flex-col">
-              <TextEditor />
-            </div>
-          </div>
+          <AnswerGenerateAndEdit />
         </div>
       </div>
     </div>
