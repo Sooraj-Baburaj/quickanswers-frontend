@@ -8,7 +8,7 @@ import Lines from "./Lines";
 const VersionsThumbnails = () => {
   return (
     <div className="w-full flex flex-col mt-xl space-y-lg mb-2xl">
-      <h4 className="w-full text-xl font-semibold">Previous Versions </h4>
+      <h4 className="w-full text-xl font-semibold">All Answers</h4>
 
       <div className="w-full flex space-x-md">
         <Slider slidesPerView={"auto"}>

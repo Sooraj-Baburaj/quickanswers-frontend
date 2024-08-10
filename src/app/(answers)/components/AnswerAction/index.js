@@ -33,7 +33,7 @@ const AnswerAction = () => {
         <Links href="/answers/1/versions" type="primary">
           View Answer history
         </Links>
-        <Button icon={<Icon icon="like" size={20} color="#fff" />}>
+        <Button icon={<Icon icon="edit" size={20} color="#fff" />}>
           Edit Answer
         </Button>
       </div>
