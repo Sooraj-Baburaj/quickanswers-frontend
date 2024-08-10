@@ -1,11 +1,56 @@
-import React from 'react'
+import React from "react";
+import remarkGfm from "remark-gfm";
+import remarkMath from "remark-math";
 
-const GeneratedText = () => {
-    return (
-        <div className='w-full text-lg leading-[1.6]'>
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-        </div>
-    )
-}
+import { MemoizedReactMarkdown } from "../MemoizedMarkDown";
+import { CodeBlock } from "../CodeBlock";
 
-export default GeneratedText
+const GeneratedText = ({ answer }) => {
+  return (
+    <div className="w-full text-lg leading-[1.6]">
+      <MemoizedReactMarkdown
+        className="prose prose-p:text-[15px] leading-6 break-words prose-p:leading-6 prose-p:my-xs prose-pre:p-0 prose-ol:text-[15px] prose-ol:leading-6 prose-ul:text-[15px] prose-ul:leading-6"
+        remarkPlugins={[remarkGfm, remarkMath]}
+        components={{
+          p({ children }) {
+            return <p className=" last:mb-sm">{children}</p>;
+          },
+          code({ node, inline, className, children, ...props }) {
+            if (children?.length) {
+              if (children[0] == "▍") {
+                return (
+                  <span className="mt-1 cursor-default animate-pulse">▍</span>
+                );
+              }
+
+              children[0] = children[0].replace("`▍`", "▍");
+            }
+
+            const match = /language-(\w+)/.exec(className || "");
+
+            if (inline) {
+              return (
+                <code className={`${className} font-bold`} {...props}>
+                  {children}
+                </code>
+              );
+            }
+
+            return (
+              <CodeBlock
+                key={Math.random()}
+                language={(match && match[1]) || ""}
+                value={String(children).replace(/\n$/, "")}
+                {...props}
+              />
+            );
+          },
+        }}
+      >
+        {answer}
+      </MemoizedReactMarkdown>
+    </div>
+  );
+};
+
+export default GeneratedText;
