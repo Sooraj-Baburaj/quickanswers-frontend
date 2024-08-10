@@ -1,14 +1,11 @@
 "use client";
 import React from "react";
 import TextEditor from "@/src/components/TextEditor";
-import TurndownService from "turndown";
 import Input from "@/src/components/ui/Input";
 import useQuestionForm from "./useQuestionForm";
 import GenerateButton from "@/src/app/(home)/components/BannerSearch/GenerateButton";
 
 const QuestionForm = () => {
-  const turndownService = new TurndownService();
-
   const { formik, showDescription, loading, handleShowDescription } =
     useQuestionForm();
 

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 import QuestionForm from "./components/QuestionForm";
 import GoBackButton from "@/src/components/GoBackButton";
@@ -10,8 +10,9 @@ const Ask = async () => {
       <div className="container">
         <div className="w-full relative flex flex-col space-y-lg max-w-[800px] mx-auto">
           <GoBackButton />
-
-          <QuestionForm />
+          <Suspense>
+            <QuestionForm />
+          </Suspense>
 
           <AnswerGenerateAndEdit />
         </div>
