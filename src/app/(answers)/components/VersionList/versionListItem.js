@@ -4,7 +4,7 @@ import Icon from "@/src/components/ui/Icon";
 import Links from "@/src/components/ui/Links";
 import React from "react";
 
-const VersionListItem = () => {
+const VersionListItem = ({ description }) => {
   return (
     <div className="w-full flex items-start">
       <ColabAvatars single />
@@ -19,12 +19,7 @@ const VersionListItem = () => {
               </span>
             </div>
           </div>
-          <p className="text-lg">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum,
-            facilis dolorum. Qui, molestias. Autem quidem temporibus,
-            perspiciatis rem aspernatur obcaecati ex quod iste itaque explicabo
-            reprehenderit, nulla quis est. Inventore?
-          </p>
+          <p className="text-lg">{description}</p>
 
           <div className="w-full fled items-start mt-md">
             <ul className="w-full flex space-x-md [&>*]:mb-md flex-wrap">

@@ -3,7 +3,12 @@ import Icon from "../ui/Icon";
 import Tag from "../Tag";
 import Links from "../ui/Links";
 
-const QuestionThumbnail = () => {
+const QuestionThumbnail = ({
+  title,
+  description,
+  foundHelpful,
+  commentsCount,
+}) => {
   return (
     <div className="w-full flex flex-wrap">
       <div className="w-full flex flex-col">
@@ -16,15 +21,8 @@ const QuestionThumbnail = () => {
             </span>
           </div>
         </div>
-        <h4 className="text-xl leading-[1.3] font-medium mb-sm">
-          Inverse formula of exponential moving average (ewm) in pandas{" "}
-        </h4>
-        <p className="text-md opacity-60">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, facilis
-          dolorum. Qui, molestias. Autem quidem temporibus, perspiciatis rem
-          aspernatur obcaecati ex quod iste itaque explicabo reprehenderit,
-          nulla quis est. Inventore?
-        </p>
+        <h4 className="text-xl leading-[1.3] font-medium mb-sm">{title}</h4>
+        <p className="text-md opacity-60">{description}</p>
 
         <div className="w-full fled items-start mt-md">
           <ul className="w-full flex space-x-md [&>*]:mb-md flex-wrap">
@@ -34,7 +32,8 @@ const QuestionThumbnail = () => {
                   <Icon icon="tick" size={14} color="#000" />
                 </span>
                 <span>
-                  <span className="font-medium">20</span> found this helpful
+                  <span className="font-medium">{foundHelpful}</span> found this
+                  helpful
                 </span>
               </div>
             </li>
@@ -43,7 +42,7 @@ const QuestionThumbnail = () => {
                 <span className="w-[20px] h-[20px] flex justify-center items-center mr-sm">
                   <Icon icon="comment" size={12} color="#000" />
                 </span>
-                <span>53</span>
+                <span>{commentsCount}</span>
               </div>
             </li>
             <li>

@@ -32,7 +32,7 @@ const BannerSearch = () => {
             </span>
             <GenerateButton loading={loading} handleClick={handleFindAnswer} />
           </div>
-          {searchResults.length && (
+          {searchResults.length > 0 && (
             <Suggestions results={searchResults} searchValue={searchValue} />
           )}
         </div>

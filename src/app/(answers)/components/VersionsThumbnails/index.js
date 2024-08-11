@@ -14,15 +14,24 @@ const VersionsThumbnails = () => {
         <Slider slidesPerView={"auto"}>
           <SwiperSlide className="!w-auto pt-[5px] pr-[30px] last:pr-[0px]">
             <Lines />
-            <VersionThumbCard />
+            <VersionThumbCard
+              name={"Daniel"}
+              description={`Instagram's algorithm prioritizes posts in a user's feed based on their engagement patterns. It tracks how users interact with content—likes,`}
+            />
           </SwiperSlide>
           <SwiperSlide className="!w-auto pt-[5px] pr-[30px] last:pr-[0px]">
             <Lines />
-            <VersionThumbCard />
+            <VersionThumbCard
+              name={"Kiran"}
+              description={`nstagram's algorithm uses machine learning to predict what content users will find interesting. It analyzes past behavior, such as who users follow,`}
+            />
           </SwiperSlide>
           <SwiperSlide className="!w-auto pt-[5px] pr-[30px] last:pr-[0px]">
             <Lines />
-            <VersionThumbCard />
+            <VersionThumbCard
+              name={`albert`}
+              description={`The Instagram algorithm takes into account the strength of relationships between users. It looks at direct interactions`}
+            />
           </SwiperSlide>
         </Slider>
       </div>

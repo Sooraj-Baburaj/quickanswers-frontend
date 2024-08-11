@@ -20,8 +20,7 @@ const VersionHeading = () => {
           <span className="pl-md">Go Back</span>
         </Links>
         <h4 className="font-secondary text-[32px] font-bold leading-[1.2] max-w-[593px] mb-lg">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
+          {`how instagram algoritham works?`}
         </h4>
         <div className="w-full relative flex flex-col mt-md">
           <ul className="flex flex-wrap w-auto -m-sm">

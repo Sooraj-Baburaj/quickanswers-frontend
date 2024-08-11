@@ -21,7 +21,10 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar
+                  title={`TechGuru101`}
+                  designation={`Senior Software Engineer`}
+                />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -31,7 +34,7 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar title={`CreativeMinds`} designation={`Designer`} />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -41,7 +44,7 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar title={`DataWizard`} designation={`Data Analyst`} />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -51,7 +54,7 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar title={`InnovatorX`} designation={`Product Manager`} />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -61,7 +64,10 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar
+                  title={`StrategyNinja`}
+                  designation={`Marketing Strategist`}
+                />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -71,7 +77,10 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar
+                  title={`CodeCrusader`}
+                  designation={`Full Stack Developer`}
+                />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -81,7 +90,10 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar
+                  title={`VisionaryLeader`}
+                  designation={`CEO & Founder`}
+                />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -91,7 +103,7 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar title={`HealthHacker`} designation={`Wellness Coach`} />
               </Links>
             </SwiperSlide>
             <SwiperSlide className="!w-auto pr-[10px] last:pr-[0px]">
@@ -101,7 +113,10 @@ const TopCreators = () => {
                   "flex p-[16px] border border-primary-border rounded-md hover:border-primary transition-all duration-300 hover:-translate-y-xs"
                 }
               >
-                <Avatar />
+                <Avatar
+                  title={`FinanceGuru`}
+                  designation={`Financial Advisor`}
+                />
               </Links>
             </SwiperSlide>
           </Slider>

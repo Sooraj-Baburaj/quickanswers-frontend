@@ -93,3 +93,58 @@ button {
   height: 14px;
   display: flex;
 }
+
+.content-area {
+  width: 100%;
+}
+
+.content-area h1,
+.content-area h2,
+.content-area h3 {
+  color: #333;
+  margin-top: 0;
+}
+
+.content-area p {
+  margin: 15px 0;
+  color: #555;
+}
+
+.content-area strong {
+  font-weight: bold;
+}
+
+.content-area em {
+  font-style: italic;
+}
+
+.content-area ul {
+  list-style: none; /* Remove default bullets */
+  padding-left: 0; /* Remove default padding */
+}
+
+.content-area li {
+  position: relative; /* Position the li for the ::before element */
+  padding-left: 20px; /* Space for the custom bullet */
+  margin: 10px 0; /* Space between list items */
+}
+
+.content-area li::before {
+  content: ""; /* No text content, just a shape */
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 6px; /* Width of the dot */
+  height: 6px; /* Height of the dot */
+  background-color: #333; /* Color of the dot */
+  border-radius: 50%; /* Make it a circle */
+}
+
+.content-area a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.content-area a:hover {
+  text-decoration: underline;
+}

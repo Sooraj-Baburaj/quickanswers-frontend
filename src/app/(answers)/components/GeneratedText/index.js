@@ -7,7 +7,7 @@ import { CodeBlock } from "../CodeBlock";
 
 const GeneratedText = ({ answer }) => {
   return (
-    <div className="w-full text-lg leading-[1.6]">
+    <div className="w-full text-lg leading-[1.6] content-area">
       <MemoizedReactMarkdown
         className="prose prose-p:text-[15px] leading-6 break-words prose-p:leading-6 prose-p:my-xs prose-pre:p-0 prose-ol:text-[15px] prose-ol:leading-6 prose-ul:text-[15px] prose-ul:leading-6"
         remarkPlugins={[remarkGfm, remarkMath]}
